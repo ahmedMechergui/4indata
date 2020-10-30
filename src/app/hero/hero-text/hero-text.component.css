@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+.font-open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.paragraph-2 {
+  font-family: 'Assistant' , monospace;
+  color: white !important;
+  padding-top: 17px;
+}
+
+.logo-container {
+  display: inline;
+  margin-right: 15px;
+}
+
+
+
+.logo {
+  width: 60px;
+  border-right: 1px solid white;
+  padding-right: 15px;
+}
+h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 50px;
+}
+
+h2 {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+
+/*=============================
+  # Typing effect
+  =============================*/
+
+.slogan {
+  font-family: 'Assistant', sans-serif;
+  font-size: 20px;
+}
+
+.typewriter {
+  width: fit-content;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  display: inline-flex;
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end) 1,
+    blink-caret 1s step-end infinite;
+  animation-delay: 1s;
+  width: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 ;}
+  to { width: 370px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}

@@ -1,0 +1,33 @@
+.center-radar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.animation-rotation {
+  animation-name: rotate-radar;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+
+}
+
+@keyframes rotate-radar {
+  100% {transform: translate(-50%,-50%) rotate(360deg)}
+}
+
+.width-100 {
+  width: 100% !important;
+}
+
+.opacity-down {
+  opacity: 0.7;
+}
+
+.bring-to-front {
+  position: relative;
+  z-index: 10;
+}
+

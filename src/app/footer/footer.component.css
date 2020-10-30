@@ -1,0 +1,7 @@
+.footer-links .icon-container:hover{
+  transform: rotate(-360deg);
+}
+
+.footer-links .icon-container {
+  transition-duration: 0.5s;
+}

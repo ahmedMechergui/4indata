@@ -1,0 +1,12 @@
+add links to social networks
+ask fatimah about the chat bot configuration and who should reply to messages
+ask fatimah if we can create a new 4In radar image rotated left
+
+css in product-shield component is too much , remove the unused classes
+all the products components could be optimized to one component but it will take time , talk to aymen to know if he wants to perform it
+
+add typing effect to hero
+
+add blog et news to navbar
+ask mnawer about social links
+migrate to angular universal
