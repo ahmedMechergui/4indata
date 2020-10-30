@@ -36,7 +36,7 @@ import { HeroTextComponent } from './hero/hero-text/hero-text.component';
     HeroTextComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule.withServerTransition({ appId: 'serverApp' })
   ],
   providers: [],
   bootstrap: [AppComponent]
