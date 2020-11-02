@@ -5,8 +5,17 @@ ask fatimah if we can create a new 4In radar image rotated left
 css in product-shield component is too much , remove the unused classes
 all the products components could be optimized to one component but it will take time , talk to aymen to know if he wants to perform it
 
-add typing effect to hero
+# add typing effect to hero
 
-add blog et news to navbar
-ask mnawer about social links
-migrate to angular universal
+add blog and actualités to navbar
+# ask mnawer about social links
+# migrate to angular universal
+
+ovh deployment needs to change the runtime software application :https://docs.ovh.com/gb/en/cloud-web/getting-started-with-cloud-web/
+
+hero text must be justified
+espace privé , espace news , espace blog qui s'ouvre vers une nouvelle page , ask aymen if he has a dashboard
+add blog
+
+try this template for geolocation http://themes.semicolonweb.com/html/canvas/demo-hosting.html
+check with anis if we can replace the logo text with an image

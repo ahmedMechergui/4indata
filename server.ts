@@ -57,4 +57,16 @@ if (moduleFilename === __filename || moduleFilename.includes('iisnode')) {
   run();
 }
 
+// OVH
+var ovh = require('ovh')({
+  appKey: 'ssh.cluster027.hosting.ovh.net',
+  appSecret: 'R6rXLyayHAMA2t5',
+  consumerKey: 'indatacord-ahmed'
+});
+
+ovh.request('GET', '/me', function (err, me) {
+  console.log(err || 'Welcome ' + me.firstname);
+});
+
+
 export * from './src/main.server';

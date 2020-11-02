@@ -40,6 +40,28 @@ h2 {
 
 @media (max-width: 768px) {
   h1 {
+    font-size: 19px;
+    line-height: 36px;
+  }
+  h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  .slogan {
+    font-family: 'Assistant', sans-serif;
+    font-size: 5px;
+  }
+
+  .paragraph-2 {
+    display: none;
+  }
+
+}
+
+@media (max-width: 576px) {
+  h1 {
     font-size: 28px;
     line-height: 36px;
   }
@@ -48,6 +70,18 @@ h2 {
     line-height: 24px;
     margin-bottom: 30px;
   }
+
+  .slogan {
+    font-family: 'Assistant', sans-serif;
+    font-size: 15px;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 ;}
+    to { width: 277px }
+  }
+
 }
 
 
@@ -55,15 +89,25 @@ h2 {
   # Typing effect
   =============================*/
 
-.slogan {
-  font-family: 'Assistant', sans-serif;
-  font-size: 20px;
+
+@media (min-width: 576px) {
+  .slogan {
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 ;}
+    to { width: 375px }
+  }
 }
 
 .typewriter {
   width: fit-content;
   text-align: left;
   padding-bottom: 10px;
+  white-space: nowrap;
 }
 
 /* DEMO-SPECIFIC STYLES */
@@ -85,11 +129,7 @@ h2 {
   animation-timing-function: ease-in-out;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 ;}
-  to { width: 370px }
-}
+
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
