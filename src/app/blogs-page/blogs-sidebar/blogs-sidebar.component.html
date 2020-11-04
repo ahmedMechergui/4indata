@@ -1,0 +1,21 @@
+<aside class="aside-sec">
+  <form class="form-inline search-form">
+    <input class="search-input w-100" type="search" placeholder="Rechercher..." aria-label="Search">
+    <button class="search-btn bg_grad" type="submit"><i class="icofont-search-2"></i></button>
+  </form>
+
+  <div class="latest-news">
+    <h3>Actualités</h3>
+    <div *ngFor="let i of [1,2,3,4]" class="news_item d-flex justify-content-start align-content-center align-items-center">
+      <div class="news_img">
+        <img src="assets/img/blog/blog3.jpg" alt="news-picture" class="news-img-tag">
+      </div>
+      <a href="#">
+        <div class="news-content">
+          <p class="news_tit text-uppercase">Simply dummy text of the printing</p>
+          <p class="date col_purple">Apr 13, 2018</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</aside>

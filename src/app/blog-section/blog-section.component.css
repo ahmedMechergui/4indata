@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/* --------------------------------
+RESET CSS
+-------------------------------- */
+
+
+a {
+  color: #333; }
+
+img {
+  transition: 0.3s;
+}
+img:hover {
+  transform: scale(1.05);
+}
+
+a:hover {
+  color: #333;
+  text-decoration: none; }
+section {
+  padding: 5rem 0; }
+
+/*------- text color ---------*/
+.col_purple {
+  color: #cd9ffa; }
+
+
+.section_tit {
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 1rem;
+  display: inline-block; }
+.section_tit:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  bottom: 0;
+  left: calc(50% - 10px);
+  border-radius: 50%; }
+.section_tit.purple:before {
+  background: #7a60ff;
+  background: linear-gradient(to left, #7a60ff, #cd9ffa); }
+.section_tit.lightblue:before {
+  background: #08a7dd;
+  background: linear-gradient(to left, #08a7dd, #00d7dd); }
+.section_tit.darkpurple:before {
+  background: #742f70;
+  background: linear-gradient(to right, #742f70, #c94b4b); }
+
+.sec_desc {
+  font-size: 17px; }
+
+/*-------- Geniral Classes ---------*/
+
+.box_shadow {
+  box-shadow: 0 0 25px #d0d0d0; }
+
+.font-small {
+  font-size: 14px; }
+
+
+/* ======== start blogs section =========== */
+#blogs_section .keep_reading {
+  margin: 1rem 0 0; }
+
+.blogs {
+  margin-top: 3rem; }
+
+.blog {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+.blog:hover {
+  -webkit-transform: translate(0, -1rem);
+  -moz-transform: translate(0, -1rem);
+  -o-transform: translate(0, -1rem);
+  transform: translate(0, -1rem); }
+.blog .blog_title {
+  margin: 1rem 0;
+  font-size: 17px; }
+
+.blog_img {
+  line-height: 0;
+  height: 170px;
+  overflow: hidden; }
+
+.blog_content {
+  background: #fff;
+  padding: .3rem 1rem; }
+.blog_content .likes {
+  margin-right: 1rem; }
+
+.comments svg {
+  width: 17px;
+}
+.reactions {
+  white-space: nowrap;
+}
+
+/* ======== end blogs section =========== */
+
+@media (max-width: 991px) {
+  /* --- blog responsive less than 992px ---*/
+  .blog_img {
+    line-height: 0;
+    height: 140px; }
+}
+@media (max-width: 767px) {
+  .blog_img {
+    height: 200px; } }
+@media (max-width: 575px) {
+  /* --- basic style responsive less than 575px ---*/
+  html {
+    font-size: 12px; }
+
+  .section_tit:before {
+    left: 48%; }
+
+  .blog_img {
+    line-height: 0;
+    height: 140px; }
+}

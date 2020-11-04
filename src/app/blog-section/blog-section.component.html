@@ -1,0 +1,44 @@
+<section id="blogs_section" class="text-center pb-0">
+  <div class="container quicksand-medium">
+    <h1 class="section_tit purple quicksand-bold">BLOG</h1>
+    <p class="sec_desc quick">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <div class="blogs row d-flex text-left">
+      <!-- start blog -->
+
+      <div *ngFor="let i of blogCount" class="col-sm-12 col-md-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+        <a routerLink="/blogs/article/1">
+        <div class="blog box_shadow">
+          <div class="blog_img">
+            <img class="w-100" src="assets/img/blog/blog4.jpg" alt="pic">
+          </div>
+          <div class="blog_content">
+
+              <p class="text-uppercase col_purple blog_title">How To Customize Moby App</p>
+              <p class="font-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+              <div class="blog_author d-flex justify-content-between align-items-center align-content-center">
+                <p class="text-capitalize">Johan Smit</p>
+                <div class="reactions">
+
+                  <div class="likes d-inline-block">
+                    <svg class="svg-inline--fa fa-heart fa-w-18" aria-hidden="true" data-prefix="far" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M257.3 475.4L92.5 313.6C85.4 307 24 248.1 24 174.8 24 84.1 80.8 24 176 24c41.4 0 80.6 22.8 112 49.8 31.3-27 70.6-49.8 112-49.8 91.7 0 152 56.5 152 150.8 0 52-31.8 103.5-68.1 138.7l-.4.4-164.8 161.5a43.7 43.7 0 0 1-61.4 0zM125.9 279.1L288 438.3l161.8-158.7c27.3-27 54.2-66.3 54.2-104.8C504 107.9 465.8 72 400 72c-47.2 0-92.8 49.3-112 68.4-17-17-64-68.4-112-68.4-65.9 0-104 35.9-104 102.8 0 37.3 26.7 78.9 53.9 104.3z"></path></svg>
+
+                    <span class="likes_number"> 12</span>
+                  </div>
+                  &nbsp;
+                  <div class="comments d-inline-block">
+                    <svg class="svg-inline--fa fa-comments fa-w-18" aria-hidden="true" data-prefix="far" data-icon="comments" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M574.507 443.86c-5.421 21.261-24.57 36.14-46.511 36.14-32.246 0-66.511-9.99-102.1-29.734-50.64 11.626-109.151 7.877-157.96-13.437 41.144-2.919 80.361-12.339 116.331-28.705 16.322-1.22 32.674-4.32 48.631-9.593C454.404 412.365 490.663 432 527.996 432c-32-17.455-43.219-38.958-46.159-58.502 25.443-18.848 46.159-47.183 46.159-81.135 0-10.495-2.383-21.536-7.041-32.467 7.405-25.93 8.656-50.194 5.185-73.938 32.164 30.461 49.856 69.128 49.856 106.405 0 33.893-12.913 65.047-34.976 91.119 2.653 2.038 5.924 4.176 9.962 6.378 19.261 10.508 28.947 32.739 23.525 54zM240.002 80C117.068 80 48.004 152.877 48.004 210.909c0 38.196 24.859 70.072 55.391 91.276-3.527 21.988-16.991 46.179-55.391 65.815 44.8 0 88.31-22.089 114.119-37.653 25.52 7.906 51.883 11.471 77.879 11.471C362.998 341.818 432 268.976 432 210.909 432 152.882 362.943 80 240.002 80m0-48C390.193 32 480 126.026 480 210.909c0 22.745-6.506 46.394-18.816 68.391-11.878 21.226-28.539 40.294-49.523 56.674-21.593 16.857-46.798 30.045-74.913 39.197-29.855 9.719-62.405 14.646-96.746 14.646-24.449 0-48.34-2.687-71.292-8.004C126.311 404.512 85.785 416 48.004 416c-22.18 0-41.472-15.197-46.665-36.761-5.194-21.563 5.064-43.878 24.811-53.976 7.663-3.918 13.324-7.737 17.519-11.294-7.393-7.829-13.952-16.124-19.634-24.844C8.09 264.655.005 238.339.005 210.909.005 126.259 89.508 32 240.002 32z"></path></svg>
+                    <span class="likes_number"> 5</span>
+                  </div>
+
+                </div>
+              </div>
+          </div>
+        </div>
+        </a>
+      </div>
+
+    </div>
+
+    <p class="text-center keep_reading">Intersted In more ? <a class="col_purple" routerLink="/blogs">Keep Reading</a></p>
+  </div>
+</section>

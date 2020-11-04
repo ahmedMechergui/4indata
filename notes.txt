@@ -1,4 +1,4 @@
-add links to social networks
+# add links to social networks
 ask fatimah about the chat bot configuration and who should reply to messages
 ask fatimah if we can create a new 4In radar image rotated left
 
@@ -13,9 +13,21 @@ add blog and actualités to navbar
 
 ovh deployment needs to change the runtime software application :https://docs.ovh.com/gb/en/cloud-web/getting-started-with-cloud-web/
 
-hero text must be justified
+#! hero text must be justified
 espace privé , espace news , espace blog qui s'ouvre vers une nouvelle page , ask aymen if he has a dashboard
 add blog
 
 try this template for geolocation http://themes.semicolonweb.com/html/canvas/demo-hosting.html
 check with anis if we can replace the logo text with an image
+
+
+blog templates :
+http://ah-theme.com/moby/moby/index_style1_color1.html
+https://preview.themeforest.net/item/fox-landing-page/full_screen_preview/25060609?_ga=2.248316743.1784139142.1604172413-479629644.1590842799
+http://preview.themeforest.net/item/appyland-responsive-app-landing-template/full_screen_preview/22798380?_ga=2.1328182.626120885.1604176367-479629644.1590842799
+http://preview.themeforest.net/item/moby-responsive-app-landing-template/full_screen_preview/22065010?_ga=2.1328182.626120885.1604176367-479629644.1590842799
+http://preview.themeforest.net/item/appyland-responsive-app-landing-template/full_screen_preview/22798380?_ga=2.32083390.1247698951.1604176471-479629644.1590842799
+https://inspirothemes.com/polo/home-corporate-v8.html
+
+template blog : http://ah-theme.com/moby/moby/blogs-leftside.html
+template article : http://ah-theme.com/moby/moby/article-leftside.html

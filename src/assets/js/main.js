@@ -1,6 +1,13 @@
 !(function ($) {
   "use strict";
 
+  $(window).ready(() => {
+    if (window.location.pathname !== '/') {
+      $('#header').addClass('header-scrolled box-shadow');
+      $('#logo').removeClass('fade');
+    }
+  })
+
   // Preloader
   $(window).on('load', function () {
     if ($('#preloader').length) {
@@ -109,12 +116,14 @@
 
   // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-      $('#header').addClass('header-scrolled box-shadow');
-      $('#logo').removeClass('fade');
-    } else {
-      $('#header').removeClass('header-scrolled box-shadow');
-      $('#logo').addClass('fade');
+    if (window.location.pathname === '/') {
+      if ($(this).scrollTop() > 100) {
+        $('#header').addClass('header-scrolled box-shadow');
+        $('#logo').removeClass('fade');
+      } else {
+        $('#header').removeClass('header-scrolled box-shadow');
+        $('#logo').addClass('fade');
+      }
     }
   });
 

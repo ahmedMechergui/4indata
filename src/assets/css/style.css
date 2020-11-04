@@ -18,6 +18,18 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Jost", sans-serif;
 }
+
+/*-------- section title ---------*/
+.quicksand-bold {
+  font-family: 'Quicksand' !important;
+  font-weight: bold;
+}
+
+.quicksand-medium {
+  font-family: 'Quicksand' !important;
+  font-weight: 600;
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -294,6 +306,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
+  width: 100%;
   max-height: 40px;
 }
 
