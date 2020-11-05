@@ -126,3 +126,7 @@ section {
     line-height: 0;
     height: 140px; }
 }
+
+.blog-link {
+  cursor: pointer;
+}

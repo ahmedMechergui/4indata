@@ -17,7 +17,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [],
-  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled', preloadingStrategy: PreloadAllModules})],
+  imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules})],
   exports: [RouterModule]
 })
 

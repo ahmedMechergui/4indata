@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {IsPlatformBrowserService} from "../../shared/services/is-platform-browser.service";
 
 @Component({
   selector: 'app-blogs-article',
@@ -7,10 +8,13 @@ import {Component, OnInit} from '@angular/core';
 })
 export class BlogsArticleComponent implements OnInit {
 
-  constructor() {
+  constructor(private isPlatformBrowserService : IsPlatformBrowserService) {
   }
 
   ngOnInit(): void {
+    if (this.isPlatformBrowserService){
+      window.scroll(0,0);
+    }
   }
 
 }

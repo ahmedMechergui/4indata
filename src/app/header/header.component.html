@@ -1,29 +1,23 @@
-<!--
-    Header component was causing problems so the code was placed at index.html
--->
-
-<header id="header" class="fixed-top">
+<header id="header" class="fixed-top" #header>
   <div class="container d-flex ">
 
-    <h1 class="logo mr-auto scrollto fade" id="logo">
+    <h1 (click)="redirectToSection(true)"  class="logo mr-auto scrollto fade" id="logo" >
       <!--      <a href="#top">4InData</a>-->
       <a href="#top" class="logo mr-auto"><img src="assets/img/logo-long.svg" alt=""></a>
-
-
     </h1>
     <!-- Uncomment below if you prefer to use an image logo -->
 
     <nav class="nav-menu d-none d-lg-block">
       <ul>
-        <li class="active"><a href="#top">Acceuil</a></li>
-        <li><a href="#about">Société</a></li>
-        <li><a href="#shield">Solution</a></li>
-        <li><a href="#blogs_section">Blog</a></li>
+        <li (click)="redirectToSection(true)" class="active" ><a href="#top">Acceuil</a></li>
+        <li  (click)="redirectToSection()"><a href="#about">Société</a></li>
+        <li (click)="redirectToSection()"><a href="#shield">Solution</a></li>
+        <li (click)="redirectToBlog($event)"><a href="#blogs_section">Blog</a></li>
         <li><a href="#call-to-action">Connecter</a></li>
         <li><a href="#call-to-action">Événements</a></li>
-        <li><a href="#call-to-action">Contact</a></li>
+        <li (click)="redirectToSection()"><a href="#call-to-action">Contact</a></li>
       </ul>
-    </nav><!-- .nav-menu -->
+    </nav>
 
   </div>
 </header>
