@@ -24,6 +24,7 @@ import {HomeComponent} from "./home/home.component";
 import {AppRoutingModule} from "./app-routing.module";
 import {BlogsMultipleComponent} from "./blogs-page/blogs-multiple/blogs-multiple.component";
 import {BlogsSidebarComponent} from "./blogs-page/blogs-sidebar/blogs-sidebar.component";
+import {ShareModule} from "ngx-sharebuttons";
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import {BlogsSidebarComponent} from "./blogs-page/blogs-sidebar/blogs-sidebar.co
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ShareModule
   ],
   providers: [],
   bootstrap: [AppComponent]
