@@ -1753,3 +1753,12 @@ section {
   box-sizing: initial;
   padding: 25px 0px;
 }
+.read-more {
+color: #1877f2;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}

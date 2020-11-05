@@ -16,9 +16,9 @@
             Augmenter la visibilité des produits/services
           </h3>
           <p class="p page-strip__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur est et illo, iste laudantium maiores
-            sapiente sed voluptates voluptatum. Dicta doloremque obcaecati quis. Accusamus consequatur ducimus id
-            impedit iusto quis.
+            {{description}}
+            <span class="read-more" (click)="showMore()" *ngIf="isTextHidden"> lire la suite</span>
+            <span class="read-more d-block" (click)="showLess()" *ngIf="!isTextHidden && textHidden"> lire moin </span>
           </p>
           <ul>
             <li> Fournir une vision synthétique et enrichie d'un domaine d'activité</li>

@@ -13,11 +13,9 @@
             Robot de rédaction :
           </h3>
           <p class="p page-strip__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci asperiores commodi corporis cum cumque
-            debitis dicta
-            dolorum eligendi facilis harum impedit in ipsa iste laboriosam magni minima minus natus odit officiis
-            possimus qui quos
-            reiciendis, suscipit totam? Consequatur, illo!
+            {{description}}
+            <span class="read-more" (click)="showMore()" *ngIf="isTextHidden"> lire la suite</span>
+            <span class="read-more d-block" (click)="showLess()" *ngIf="!isTextHidden && textHidden"> lire moin</span>
           <ul>
             <li> Générer automatiquement et massivement des textes personnalisés</li>
             <li> Proposer un contenu conversationnel pour des réponses aux emails/questions des forums</li>

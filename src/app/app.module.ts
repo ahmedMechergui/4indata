@@ -24,7 +24,6 @@ import {HomeComponent} from "./home/home.component";
 import {AppRoutingModule} from "./app-routing.module";
 import {BlogsMultipleComponent} from "./blogs-page/blogs-multiple/blogs-multiple.component";
 import {BlogsSidebarComponent} from "./blogs-page/blogs-sidebar/blogs-sidebar.component";
-import {SwiperModule} from "ngx-swiper-wrapper";
 
 @NgModule({
   declarations: [
@@ -53,8 +52,7 @@ import {SwiperModule} from "ngx-swiper-wrapper";
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),
     RouterModule,
-    AppRoutingModule,
-    SwiperModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

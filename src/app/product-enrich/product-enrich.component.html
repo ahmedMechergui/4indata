@@ -1,4 +1,4 @@
-<section class="page-strip page-strip--grey" id="enrich">
+<section class="page-strip page-strip--grey pb-0" id="enrich">
   <div class="wrapper" data-aos="fade-up">
     <div class="section-title">
       <h2>4In Enrich</h2>
@@ -16,14 +16,15 @@
             Lorem ipsum dolor sit amet, consectetur.
           </h3>
           <p class="p page-strip__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur est et illo, iste laudantium maiores
-            sapiente sed voluptates voluptatum. Dicta doloremque obcaecati quis. Accusamus consequatur ducimus id
-            impedit iusto quis.
+             {{description}}
+            <span class="read-more" (click)="showMore()" *ngIf="isTextHidden"> lire la suite</span>
+            <span class="read-more d-block" (click)="showLess()" *ngIf="!isTextHidden && textHidden"> lire moin</span>
           </p>
           <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, nostrum.</li>
-            <li>Doloribus iste odio sequi. Cupiditate dolore fuga ipsa labore qui.</li>
-            <li>Amet animi incidunt iusto maxime molestias officia rem sapiente voluptate!</li>
+            <li>Remplir automatiquement des données manquantes dans des bases de produits  </li>
+            <li>Rédiger automatiquement des descriptions à partir des attributs de produits </li>
+            <li>Analyser les données pour valider leur conformité (détection de fraudes) </li>
+            <li>Détecter les incohérences dans les données structurées et non structurée </li>
           </ul>
           <br><br>
 

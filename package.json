@@ -27,7 +27,6 @@
     "@angular/router": "~10.2.0",
     "@nguniversal/express-engine": "^10.1.0",
     "express": "^4.15.2",
-    "ngx-swiper-wrapper": "^10.0.0",
     "ovh": "^2.0.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",

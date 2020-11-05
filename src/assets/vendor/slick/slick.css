@@ -42,10 +42,8 @@
 .slick-list
 {
     position: relative;
-
     display: block;
     overflow: hidden;
-
     margin: 0;
     padding: 0;
 }
@@ -139,20 +137,6 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .custom-arrow {

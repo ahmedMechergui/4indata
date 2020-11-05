@@ -19,7 +19,7 @@ add blog
 
 try this template for geolocation http://themes.semicolonweb.com/html/canvas/demo-hosting.html
 check with anis if we can replace the logo text with an image
-
+on blog change columns order on medium and small devices
 
 blog templates :
 http://ah-theme.com/moby/moby/index_style1_color1.html

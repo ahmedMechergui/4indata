@@ -57,6 +57,7 @@ p, h1, h2, h3, form {
 
 .article .art_date {
   margin-right: 1.5rem;
+  width: 100%;
 }
 
 .article .article_img {
@@ -129,4 +130,73 @@ p, h1, h2, h3, form {
 
 #comment_submit:hover .rotate-icon{
       transform: rotate(45deg);
+}
+
+
+/*===================
+ #social buttons
+ ====================*/
+.socials-sm{
+  text-align: right;
+}
+
+.clr {
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  list-style: none;
+  font-size: .923em;
+  display: inline-block;
+}
+
+
+.share-button {
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  display: inline-block;
+  margin: 0 3px 3px 0;
+}
+
+.share-button a {
+  cursor: pointer;
+  text-align: center;
+  padding: .385em .769em;
+  color: #fff !important;
+  border-radius: 3px;
+}
+
+.facebook-button {
+  background: #3b5998;
+}
+
+.facebook-button:hover {
+  background: #324b80;
+}
+
+.linkedin-button {
+  background: #4875b4;
+}
+
+.linkedin-button:hover {
+  background: #3e659c;
+}
+
+.twitter-button {
+  background: #00aced;
+}
+
+.twitter-button:hover {
+  background: #0093cb;;
+}
+
+.wpex-label {
+  margin: 0 0 0 .538em;
 }

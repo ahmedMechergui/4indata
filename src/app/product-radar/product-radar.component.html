@@ -16,11 +16,9 @@
             Augmenter la visibilité des produits/services
           </h3>
           <p class="p page-strip__text">
-            4INRADAR vous offre la possibilité d’écouter en temps réel les réseaux sociaux,
-            les comparateurs de prix, les forums ou encore les portails journalistiques.
-            Une vision à 360° qui peut être enrichie par vos propres outils et ressources (CRM, ERP, etc.)
-            et accompagne votre marketing au quotidien pour une meilleure appréhension du lien entre
-            l’espace numérique et votre entreprise.
+            {{description}}
+            <span class="read-more" (click)="showMore()" *ngIf="isTextHidden"> lire la suite</span>
+            <span class="read-more d-block" (click)="showLess()" *ngIf="!isTextHidden && textHidden"> lire moin</span>
           </p>
           <ul>
             <li> Vision synthétique et enrichie</li>
