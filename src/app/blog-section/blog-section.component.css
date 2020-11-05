@@ -5,10 +5,14 @@ RESET CSS
 
 
 a {
-  color: #333; }
+  color: #333;
+  cursor: pointer;
+  outline: none;
+}
 
 img {
   transition: 0.3s;
+  outline: none;
 }
 img:hover {
   transform: scale(1.05);
@@ -101,6 +105,10 @@ section {
 }
 .reactions {
   white-space: nowrap;
+}
+
+.slide {
+  outline: none;
 }
 
 /* ======== end blogs section =========== */

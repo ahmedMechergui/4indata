@@ -2,41 +2,41 @@
   <div class="container quicksand-medium">
     <h1 class="section_tit purple quicksand-bold">BLOG</h1>
     <p class="sec_desc quick">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-    <div class="blogs row d-flex text-left">
+    <div class="blogs row d-flex text-left slick-items">
       <!-- start blog -->
 
-      <div *ngFor="let i of blogCount" class="col-sm-12 col-md-4 wow fadeInUp" data-wow-duration="1s"
-           data-wow-delay="0s">
-        <a (click)="redirectToSection()" class="blog-link">
-          <div class="blog box_shadow">
-            <div class="blog_img">
-              <img class="w-100" src="assets/img/blog/blog4.jpg" alt="pic">
-            </div>
-            <div class="blog_content">
+        <div *ngFor="let i of [1,2,3,4,5,6]" class="col-sm-12 col-md-4 slide" id="slide-{{i}}"
+             data-aos="flip-right" data-aos-duration="700">
+          <a (click)="redirectToSection()" class="blog-link">
+            <div class="blog box_shadow">
+              <div class="blog_img">
+                <img class="w-100" src="assets/img/blog/blog4.jpg" alt="pic">
+              </div>
+              <div class="blog_content">
 
-              <p class="text-uppercase col_purple blog_title">How To Customize Moby App</p>
-              <p class="font-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore.</p>
-              <div class="blog_author d-flex justify-content-between align-items-center align-content-center">
-                <p class="text-capitalize">Johan Smit</p>
-                <div class="reactions">
+                <p class="text-uppercase col_purple blog_title">How To Customize Moby App</p>
+                <p class="font-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore.</p>
+                <div class="blog_author d-flex justify-content-between align-items-center align-content-center">
+                  <p class="text-capitalize">Johan Smit</p>
+                  <div class="reactions">
 
-                  <div class="likes d-inline-block">
-                    <i class="icofont-speech-comments"></i>
-                    <span class="likes_number"> 2</span>
+                    <div class="likes d-inline-block">
+                      <i class="icofont-speech-comments"></i>
+                      <span class="likes_number"> 2</span>
+                    </div>
+
+                    <div class="comments d-inline-block">
+                      <i class="icofont-eye-alt"></i>
+                      <span class="likes_number"> 75</span>
+                    </div>
+
                   </div>
-
-                  <div class="comments d-inline-block">
-                    <i class="icofont-eye-alt"></i>
-                    <span class="likes_number"> 75</span>
-                  </div>
-
                 </div>
               </div>
             </div>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
     </div>
 

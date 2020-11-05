@@ -20,9 +20,13 @@ export class FooterComponent implements OnInit {
     if (this.router.routerState.snapshot.url !== '/') {
       this.router.navigate([''],{}).then();
     }
+  }
 
-
-
+  redirectToBlog(event:Event): void {
+    if (this.router.routerState.snapshot.url !== '/') {
+      this.router.navigate(['blogs']).then();
+      event.preventDefault()
+    }
   }
 
 }

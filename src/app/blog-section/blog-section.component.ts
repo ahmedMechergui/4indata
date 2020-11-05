@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
+import {ScriptsLoaderService} from "../shared/services/scripts-loader.service";
 
 
 @Component({
@@ -8,12 +9,16 @@ import {Router} from "@angular/router";
   styleUrls: ['./blog-section.component.css']
 })
 export class BlogSectionComponent implements OnInit {
-  blogCount = [1, 2, 3]
 
-  constructor(private router: Router) {
+  constructor(private router: Router , private ScriptsLoader : ScriptsLoaderService) {
   }
 
   ngOnInit(): void {
+    this.loadScripts();
+  }
+
+  loadScripts() : void {
+    this.ScriptsLoader.addManyScriptsAsync('assets/js/carousel-blog-section.js').then();
   }
 
   redirectToSection(): void {

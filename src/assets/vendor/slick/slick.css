@@ -1,0 +1,177 @@
+
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-slider:before , .slick-slider:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 20px;
+  top: 0;
+  height: 370px;
+  pointer-events: none;
+}
+
+.slick-slider:before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));
+}
+
+.slick-slider:after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 18px;
+    left: 0;
+    height: 370px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+  outline-color: transparent;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-arrow {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+}
+
+.custom-arrow i{
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.prev-arrow {
+transform: translate(50%,-50%);
+left: -10px;
+}
+.next-arrow {
+transform: translate(-50%,-50%);
+right: -10px;
+}
+

@@ -1,6 +1,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -1740,4 +1744,12 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+}
+/*=====================
+  Slick carousel fix
+ ======================*/
+
+.slick-list {
+  box-sizing: initial;
+  padding: 25px 0px;
 }

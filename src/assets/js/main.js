@@ -116,7 +116,6 @@
 
   // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function () {
-    console.log('pathname : ',window.location.pathname);
     if (window.location.pathname === '/') {
       if ($(this).scrollTop() > 100) {
         $('#header').addClass('header-scrolled box-shadow');
