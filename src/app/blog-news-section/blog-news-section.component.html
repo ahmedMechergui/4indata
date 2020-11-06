@@ -1,43 +1,43 @@
-<section id="blogs_section" class="text-center" [class.grey-bg]="section==='Evénements'">
+<section [id]="section==='Blog' ?'blogs_section' : 'news_section'" class="text-center" [class.grey-bg]="section==='Evénements'">
   <div class="container quicksand-medium" [class.in-news]="section === 'Evénements'">
     <h1 class="section_tit purple quicksand-bold text-capitalize">{{section}}</h1>
-<!--    <p class="sec_desc quick">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>-->
+    <!--    <p class="sec_desc quick">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>-->
     <div class="blogs row d-flex text-left slick-items mt-0">
       <!-- start blog -->
 
-        <div *ngFor="let i of [1,2,3,4,5,6]" class="col-sm-12 col-md-4 slide" id="slide-{{i}}"
-             data-aos="flip-right" data-aos-duration="700" data-aos-delay="200">
-          <a routerLink="/blogs/article/1" class="blog-link">
-            <div class="blog box_shadow">
-              <div class="blog_img">
-                <img class="w-100" src="assets/img/blog/blog4.jpg" alt="pic" *ngIf="section === 'Blog'">
-                <img class="w-100" src="assets/img/blog/blog-inner.jpg" alt="pic" *ngIf="section === 'Evénements'">
-              </div>
-              <div class="blog_content">
+      <div *ngFor="let i of [1,2,3,4,5,6]" class="col-sm-12 col-md-4 slide" id="slide-{{i}}"
+           data-aos="flip-right" data-aos-duration="700" data-aos-delay="200">
+        <a [routerLink]="section==='Blog' ? '/blogs/article/1' : '/news/article/1'" class="blog-link">
+          <div class="blog box_shadow">
+            <div class="blog_img">
+              <img class="w-100" src="assets/img/blog/blog4.jpg" alt="pic" *ngIf="section === 'Blog'">
+              <img class="w-100" src="assets/img/blog/blog-inner.jpg" alt="pic" *ngIf="section === 'Evénements'">
+            </div>
+            <div class="blog_content">
 
-                <p class="text-uppercase col_purple blog_title">How To Customize Moby App</p>
-                <p class="font-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                  incididunt ut labore.</p>
-                <div class="blog_author d-flex justify-content-between align-items-center align-content-center">
-                  <p class="text-capitalize">Johan Smit</p>
-                  <div class="reactions">
+              <p class="text-uppercase col_purple blog_title">How To Customize Moby App</p>
+              <p class="font-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore.</p>
+              <div class="blog_author d-flex justify-content-between align-items-center align-content-center">
+                <p class="text-capitalize">Johan Smit</p>
+                <div class="reactions">
 
-                    <div class="likes d-inline-block">
-                      <i class="icofont-speech-comments"></i>
-                      <span class="likes_number"> 2</span>
-                    </div>
-
-                    <div class="comments d-inline-block">
-                      <i class="icofont-eye-alt"></i>
-                      <span class="likes_number"> 75</span>
-                    </div>
-
+                  <div class="likes d-inline-block">
+                    <i class="icofont-speech-comments"></i>
+                    <span class="likes_number"> 2</span>
                   </div>
+
+                  <div class="comments d-inline-block">
+                    <i class="icofont-eye-alt"></i>
+                    <span class="likes_number"> 75</span>
+                  </div>
+
                 </div>
               </div>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
+      </div>
 
     </div>
 

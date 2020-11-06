@@ -34,5 +34,14 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  redirectToNews(event:Event): void {
+    if (this.router.routerState.snapshot.url !== '/') {
+      this.router.navigate(['news']).then();
+      event.preventDefault()
+    }
+  }
+
+
+
 
 }

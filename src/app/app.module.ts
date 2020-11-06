@@ -25,6 +25,10 @@ import {BlogsMultipleComponent} from "./blogs-page/blogs-multiple/blogs-multiple
 import {BlogsSidebarComponent} from "./blogs-page/blogs-sidebar/blogs-sidebar.component";
 import {ShareModule} from "ngx-sharebuttons";
 import {BlogNewsSectionComponent} from "./blog-news-section/blog-news-section.component";
+import {NewsPageComponent} from "./news-page/news-page.component";
+import {NewsMultipleComponent} from "./news-page/news-multiple/news-multiple.component";
+import {NewsArticleComponent} from "./news-page/news-article/news-article.component";
+import {NewsSidebarComponent} from "./news-page/news-sidebar/news-sidebar.component";
 
 @NgModule({
   declarations: [
@@ -48,7 +52,11 @@ import {BlogNewsSectionComponent} from "./blog-news-section/blog-news-section.co
     BlogsArticleComponent,
     BlogsMultipleComponent,
     BlogsSidebarComponent,
-    HomeComponent
+    HomeComponent,
+    NewsPageComponent,
+    NewsMultipleComponent,
+    NewsArticleComponent,
+    NewsSidebarComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),

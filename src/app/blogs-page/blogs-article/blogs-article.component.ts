@@ -13,7 +13,7 @@ export class BlogsArticleComponent implements OnInit {
 
   ngOnInit(): void {
     if (this.isPlatformBrowserService){
-      window.scroll(0,0);
+      window.scroll({behavior:"smooth",top:0});
     }
   }
 

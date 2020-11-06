@@ -1,5 +1,6 @@
 import {Inject, Injectable, Renderer2} from '@angular/core';
 import {DOCUMENT} from '@angular/common';
+import {IsPlatformBrowserService} from "./is-platform-browser.service";
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +9,7 @@ export class ScriptsLoaderService {
 
 
   // tslint:disable-next-line:variable-name
-  constructor(@Inject(DOCUMENT) private _document) {
+  constructor(@Inject(DOCUMENT) private _document , private isPlatformBrowserService: IsPlatformBrowserService) {
   }
 
 // a renderer2 must be created at the component to access its DOM
@@ -43,6 +44,7 @@ export class ScriptsLoaderService {
   // Paths should from /assets folder
   // example : /assets/js/myScript.js
   addOneScriptAsync(path): Promise<any> {
+    if (!this.isPlatformBrowserService.isPlatformBrowser()) {return;}
     return new Promise((resolve, reject) => {
       const scriptElement = window.document.createElement('script');
       scriptElement.src = path;
