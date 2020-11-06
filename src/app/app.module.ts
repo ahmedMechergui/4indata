@@ -16,7 +16,6 @@ import {ProductRadarComponent} from './product-radar/product-radar.component';
 import {ProductEnrichComponent} from './product-enrich/product-enrich.component';
 import {HeroAnimatedImageComponent} from './hero/hero-animated-image/hero-animated-image.component';
 import {HeroTextComponent} from './hero/hero-text/hero-text.component';
-import {BlogSectionComponent} from "./blog-section/blog-section.component";
 import {BlogsPageComponent} from "./blogs-page/blogs-page.component";
 import {BlogsArticleComponent} from "./blogs-page/blogs-article/blogs-article.component";
 import {RouterModule} from "@angular/router";
@@ -25,6 +24,7 @@ import {AppRoutingModule} from "./app-routing.module";
 import {BlogsMultipleComponent} from "./blogs-page/blogs-multiple/blogs-multiple.component";
 import {BlogsSidebarComponent} from "./blogs-page/blogs-sidebar/blogs-sidebar.component";
 import {ShareModule} from "ngx-sharebuttons";
+import {BlogNewsSectionComponent} from "./blog-news-section/blog-news-section.component";
 
 @NgModule({
   declarations: [
@@ -43,7 +43,7 @@ import {ShareModule} from "ngx-sharebuttons";
     ProductEnrichComponent,
     HeroAnimatedImageComponent,
     HeroTextComponent,
-    BlogSectionComponent,
+    BlogNewsSectionComponent,
     BlogsPageComponent,
     BlogsArticleComponent,
     BlogsMultipleComponent,

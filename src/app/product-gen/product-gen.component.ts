@@ -7,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductGenComponent implements OnInit {
 
-  description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci asperiores commodi corporis cum cumque' +
-    'debitis dicta' +
-    'dolorum eligendi facilis harum impedit in ipsa iste laboriosam magni minima minus natus odit officiis' +
-    'possimus qui quos' +
-    'reiciendis, suscipit totam? Consequatur, illo!' ;
+  description = '4INGEN est une solution innovante de génération automatique de textes.' +
+    ' Avoir du contenu diversifié et de qualité est le garant d’un bon référencement' +
+    ' et ce dernier d’une bonne visibilité. 4INDATA vous propose de générer de ' +
+    'manière automatique et massive des textes plus ou moins longs sur les thématiques' +
+    ' de votre choix en respectant la syntaxe et la terminologie souhaitées. Ce robot' +
+    ' rédacteur libérera vos rédacteurs des tâches de rédaction chronophages et répétitives.' +
+    ' La solution est disponible à la demande en temps réel ou en one shot. '
 
   isTextHidden = false;
   textShown: string;

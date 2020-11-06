@@ -66,6 +66,21 @@ section {
 
 
 /* ======== start blogs section =========== */
+
+.in-news .slick-slider:before  {
+  left: 0;
+  background: linear-gradient(to right, rgba(236,239,241, 1), rgba(0, 0, 0, 0));
+}
+
+.in-news .slick-slider:after {
+  right: 0;
+  background: linear-gradient(to left, rgba(236,239,241, 1), rgba(0, 0, 0, 0));
+}
+
+.grey-bg {
+  background-color: #ECEFF1;
+}
+
 #blogs_section .keep_reading {
   margin: 1rem 0 0; }
 
@@ -79,7 +94,8 @@ section {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out;
+}
 .blog:hover {
   -webkit-transform: translate(0, -1rem);
   -moz-transform: translate(0, -1rem);

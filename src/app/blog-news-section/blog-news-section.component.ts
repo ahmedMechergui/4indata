@@ -1,14 +1,16 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 import {ScriptsLoaderService} from "../shared/services/scripts-loader.service";
 
 
 @Component({
   selector: 'app-blog-section',
-  templateUrl: './blog-section.component.html',
-  styleUrls: ['./blog-section.component.css']
+  templateUrl: './blog-news-section.component.html',
+  styleUrls: ['./blog-news-section.component.css']
 })
-export class BlogSectionComponent implements OnInit {
+export class BlogNewsSectionComponent implements OnInit {
+
+  @Input() section;
 
   constructor(private router: Router , private ScriptsLoader : ScriptsLoaderService) {
   }
