@@ -1,0 +1,2 @@
+<app-login (clickedCreateAccount)="componentToShow='register'" *ngIf="componentToShow==='login'"></app-login>
+<app-register (clickedLoginAccount)="componentToShow='login'" *ngIf="componentToShow==='register'"></app-register>

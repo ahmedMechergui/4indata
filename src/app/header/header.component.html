@@ -15,9 +15,22 @@
         <li (click)="redirectToBlog($event)"><a href="#blogs_section">Blog</a></li>
         <li (click)="redirectToNews($event)"><a href="#news_section">Événements</a></li>
         <li (click)="redirectToSection()"><a href="#call-to-action">Contact</a></li>
-        <li><a href="#call-to-action"><i class="icofont-ui-user"></i>&nbsp;connecter</a></li>
+        <li ><a data-toggle="modal" data-target="#sign-in-modal"><i class="icofont-ui-user"></i>&nbsp;connecter</a></li>
       </ul>
     </nav>
 
   </div>
 </header>
+
+
+
+<div class="modal" id="sign-in-modal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <app-sign-in></app-sign-in>
+      </div>
+    </div>
+  </div>
+</div>

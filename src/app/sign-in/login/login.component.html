@@ -1,0 +1,77 @@
+<div class="row">
+  <div class="col-sm-12">
+
+
+    <h3 class="form-title quicksand-bold">
+      <img alt="image missing..." class="login-illustration" src="assets/img/forms/security.svg">
+      Connecter
+    </h3>
+
+<!--
+  # Do not delete this , you may need it after things go dynamic
+  -->
+<!--    <div class="alert alert-danger alert-dismissible fade show">-->
+<!--      <button type="button" class="close" data-dismiss="alert">&times;</button>-->
+<!--      <strong>Error!</strong> please verify email and password.-->
+<!--    </div>-->
+    <form [formGroup]="form" class="join-us-form" method="post">
+
+      <div class="form-row">
+        <div class="col-md-12 form-group">
+          <input autocomplete="off"
+                 class="form-control"
+                 formControlName="email"
+                 id="email" name="email"
+                 placeholder="Votre E-mail"
+                 type="email"
+                 tabindex="1"
+          />
+
+<!--          <small *ngIf="form.get('email').invalid && form.get('email').touched" class="form-text text-danger">-->
+<!--            <i class="icofont-warning-alt"></i>-->
+<!--            Please enter a valid email-->
+<!--          </small>-->
+
+        </div>
+
+        <div class="col-md-12 form-group">
+          <input class="form-control"
+                 formControlName="password"
+                 id="password"
+                 name="password"
+                 placeholder="Votre mot de passe"
+                 type="password"
+                 tabindex="2"
+          />
+
+<!--          <small *ngIf="form.get('password').invalid && form.get('password').touched && !isError2" class="form-text text-danger d-inline">-->
+<!--            <i class="icofont-warning-alt"></i>-->
+<!--            Password must have 8 characters at least.-->
+<!--          </small>-->
+
+          <small class="d-inline"><a [routerLink]="'password-forgotten'">Mot de passe oubliée ?</a></small>
+
+        </div>
+      </div>
+
+
+      <div class="text-center">
+        <button type="submit" tabindex="3"><i class="icofont-login"></i> Connecter</button>
+      </div>
+
+    </form>
+    <hr>
+
+    <h6 class="text-secondary text-center"><B>pas un membre ? </B><a [routerLink]="'/sign-in/register'" (click)="createAccountClicked()"> demander un compte</a></h6>
+
+    <!--  Do not delete the code below , you might need it for other projects  -->
+
+    <!--    <div class="login-socials" title="Social login does not work on local server!">-->
+    <!--      <a><i class="icofont-twitter"></i></a>-->
+    <!--      <a><i class="icofont-facebook"></i></a>-->
+    <!--      <a><i class="icofont-google-plus" style="margin-right: 0 !important"></i></a>-->
+    <!--    </div>-->
+
+
+  </div>
+</div>

@@ -8,8 +8,10 @@
   visibility: hidden;
 }
 
+
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgba(40, 58, 90, 0.9);
+  /*background: rgba(40, 58, 90, 0.9);*/
+  background: rgba(0,12,46,0.9);
 }
 
 #header .logo {

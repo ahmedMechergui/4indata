@@ -8,6 +8,7 @@ body {
 
 a {
   color: #47b2e4;
+  cursor: pointer;
 }
 
 a:hover {
@@ -17,4 +18,12 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Jost", sans-serif;
+}
+/*
+  # Styling the bootstrap modal close button
+*/
+.modal-body .close {
+  position: absolute;
+  right: 20px;
+  outline: none;
 }

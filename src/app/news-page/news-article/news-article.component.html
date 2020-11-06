@@ -77,16 +77,16 @@
                 </p>
               </div>
             </div>
-            <form id="comment_form" class="text-center" action="index.html" method="post">
+            <form formGroup="{{form}}" class="text-center" action="index.html" method="post">
               <div class="row">
                 <div class="col">
-                  <input type="text" id="user-name" class="form-input w-100" name="full-name" placeholder="Votre Nom" required>
+                  <input type="text" id="user-name" class="form-input w-100" formControlName="name" placeholder="Votre Nom" required>
                 </div>
                 <div class="col">
-                  <input type="email" id="user-email" class="form-input w-100" name="email" placeholder="Votre E-mail" required>
+                  <input type="email" id="user-email" class="form-input w-100" formControlName="email" placeholder="Votre E-mail" required>
                 </div>
               </div>
-              <textarea class="form-input w-100" id="user-message" placeholder="Commentaire" name="message"></textarea>
+              <textarea class="form-input w-100" id="user-message" placeholder="Commentaire" formControlName="comment"></textarea>
               <button id="comment_submit" class="btn_grad text-uppercase" title="Commenter" type="submit" name="button">
                 <div class="rotate-icon"><i class="icofont-location-arrow"></i></div>
               </button>

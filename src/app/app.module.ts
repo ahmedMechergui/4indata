@@ -29,6 +29,10 @@ import {NewsPageComponent} from "./news-page/news-page.component";
 import {NewsMultipleComponent} from "./news-page/news-multiple/news-multiple.component";
 import {NewsArticleComponent} from "./news-page/news-article/news-article.component";
 import {NewsSidebarComponent} from "./news-page/news-sidebar/news-sidebar.component";
+import {SignInComponent} from "./sign-in/sign-in.component";
+import {LoginComponent} from "./sign-in/login/login.component";
+import {RegisterComponent} from "./sign-in/register/register.component";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -56,13 +60,17 @@ import {NewsSidebarComponent} from "./news-page/news-sidebar/news-sidebar.compon
     NewsPageComponent,
     NewsMultipleComponent,
     NewsArticleComponent,
-    NewsSidebarComponent
+    NewsSidebarComponent,
+    SignInComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),
     RouterModule,
     AppRoutingModule,
-    ShareModule
+    ShareModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
