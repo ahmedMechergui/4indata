@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "dev:ssr": "ng run fourindata:serve-ssr",
-    "serve:ssr": "node dist/fourindata/server/main.js",
+    "serve:ssr": "node dist/fourindata/server",
     "build:ssr": "ng build --prod && ng run fourindata:server:production",
     "prerender": "ng run fourindata:prerender"
   },
